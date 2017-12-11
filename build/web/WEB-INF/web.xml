@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>ActionAluno</servlet-name>
+        <servlet-class>control.ActionAluno</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActionIncluirAluno</servlet-name>
+        <servlet-class>control.ActionIncluirAluno</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActionIncluirOcorrencia</servlet-name>
+        <servlet-class>control.ActionIncluirOcorrencia</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ActionOcorrencia</servlet-name>
+        <servlet-class>control.ActionOcorrencia</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ActionAluno</servlet-name>
+        <url-pattern>/ActionAluno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActionIncluirAluno</servlet-name>
+        <url-pattern>/ActionIncluirAluno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActionIncluirOcorrencia</servlet-name>
+        <url-pattern>/ActionIncluirOcorrencia</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActionOcorrencia</servlet-name>
+        <url-pattern>/ActionOcorrencia</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
